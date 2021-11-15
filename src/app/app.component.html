@@ -1,0 +1,172 @@
+<head>
+<meta charset="utf-8">
+
+<title>Mars Weather Forecast</title>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+<meta name="theme-color" content="#7952b3">
+
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+
+</head>
+
+<header>
+<div class="collapse bg-dark" id="navbarHeader">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-7 py-4">
+        <h4 class="text-white">About</h4>
+        <p class="text-muted">Getto's Online Resturant is a convinient digital solution where everyone can order the freshly made delicious meals online and they can have their food delivered at their doorstep in few minutes</p>
+      </div>
+      <div class="col-sm-4 offset-md-1 py-4">
+        <h4 class="text-white">Contact</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Follow on Twitter</a></li>
+          <li><a href="#" class="text-white">Like on Facebook</a></li>
+          <li><a href="#" class="text-white">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</div>
+</header>
+
+
+
+
+<section  class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div  class="col-lg-6 col-md-8 mx-auto">
+     <p> <h2  class="fw-light">Mars Weather Forecast</h2>
+      <img  width = 700px height="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwS9cw7cTXGqwfvTy_7m1hfM5ei7fs1jzw2w&usqp=CAU">
+      <p>
+        <a href="#" class="btn btn-primary my-2"><strong><em>View Report</em></strong></a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<table>
+
+<colgroup>
+
+  <col>
+  
+  <col>
+  
+  <col style="width:300px">
+  
+</colgroup>
+  
+
+<tr>
+<th>Date</th>
+
+<th>Temperature</th>
+
+<th>Humidity</th>
+
+<th>Wind Speed</th>
+
+<th>Safety</th>
+
+</tr>
+
+
+
+
+<div  *ngFor="let temperature of temperatures">
+
+<tr>
+
+  <td>
+    
+      {{ temperature.date }}
+   
+  </td>
+
+<td>
+ 
+   {{ temperature.temp }}
+  
+</td>
+
+<td>
+
+ {{ temperature.humidity }}
+
+</td>
+
+
+<td>
+
+ {{ temperature.windSpeed }}
+
+</td>
+
+
+<td>
+ 
+     {{ temperature.safe }}
+ 
+</td>
+</tr>
+
+
+</div>
+
+</table>
+
+
+
+<style>
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+</style>
+
+
+
+
+<footer>
+  <p>Author: Poulo Malebo<br>
+  <a href="kamohelo196@gmail.com">kamohelo196@gmail.com</a></p>
+</footer>
+
+
